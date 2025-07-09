@@ -67,7 +67,7 @@ namespace DatabaseDesigner.Wasm.Pages
         // **FIX 3:** The event handler now receives a BaseLinkModel.
         private void OnLinkRemoved(BaseLinkModel link)
         {
-            link.TargetPortChanged -= OnLinkTargetPortChanged;
+            // The line "link.TargetPortChanged -= OnLinkTargetPortChanged;" has been removed.
 
             if (!link.IsAttached)
                 return;
@@ -78,8 +78,8 @@ namespace DatabaseDesigner.Wasm.Pages
 
             if (sourceCol != null && targetCol != null)
             {
-            (sourceCol.Primary ? targetCol : sourceCol).Refresh();
-        }
+                (sourceCol.Primary ? targetCol : sourceCol).Refresh();
+            }
         }
 
         private void NewTable()
