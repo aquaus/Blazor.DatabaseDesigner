@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using Blazor.Diagrams.Core.Models;
+using System.Text.Json.Serialization;
 using Blazor.Diagrams.Core.Models;
 using Blazor.Diagrams.Core.Models.Base;
 
